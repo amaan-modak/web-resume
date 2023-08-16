@@ -445,6 +445,11 @@ ul#navigation li .glyphicon {
     cursor: pointer;
 }
 
+.ul-withdetails li .meta2 {
+    overflow: hidden;
+    padding: 20px;
+}
+
 .ul-withdetails li .details {
     display: none;
     padding: 20px;
