@@ -76,7 +76,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 275px;
+    width: 250px;
     background: #014E71;
     position: absolute;
     left: 0;
@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #main {
     position: absolute;
-    left: 275px;
+    left: 250px;
     right: 0;
     top: 0;
     bottom: 0;
@@ -235,7 +235,7 @@ ul#navigation li .glyphicon {
     width: 100%;
     background: linear-gradient(to bottom right, rgb(1, 121, 175), rgb(0, 12, 33));
     border-top: 2px solid #002c3e;
-    width: 275px;
+    width: 250px;
     z-index: 2;
     height: 45px;
     border-right: 2px solid #002c3e;
