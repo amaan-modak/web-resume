@@ -1385,7 +1385,10 @@ img {
 }
 
 .img-rounded {
-    border-radius: 6px
+    border-radius: 6px;
+    height: 90px;
+    width: 120px;
+    overflow: hidden;
 }
 
 .img-thumbnail {
