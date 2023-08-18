@@ -1381,13 +1381,16 @@ img {
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
     max-width: 100%;
+    vertical-align: middle;
     height: auto
 }
 
 .img-rounded {
     border-radius: 6px;
-    height: 90px;
-    width: 120px;
+    min-height: 80px;
+    max-height: 90px;
+    min-width: 80px;
+    max-width: 90px;
     overflow: hidden;
 }
 
@@ -3446,6 +3449,8 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
+    height: auto;
+    width: 75px;
 }
 
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
