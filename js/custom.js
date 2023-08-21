@@ -69,6 +69,9 @@ $(document).ready(function(){
 					case "home" :
 						self.reset();
 						break;
+					case "project" :
+						self.forward($target,$secondary);
+						break;
 					case "p1" :
 						self.forward($target,$secondary);
 						break;
