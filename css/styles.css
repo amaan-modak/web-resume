@@ -29,7 +29,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     background: #014E71;
@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     left: 2000px;
     bottom: 0;
     width: 85%;
-    background: linear-gradient(to top left, rgb(1, 121, 175), rgb(0, 34, 48));
+    background: linear-gradient(to top left, #0E5485, #010F18);
     color: #fff;
 }
 
@@ -274,7 +274,7 @@ ul#navigation li .glyphicon {
 }
 
 .pageheader {
-    background: linear-gradient(to top left, rgb(1, 121, 175), rgb(0, 34, 48));
+    background: linear-gradient(to top left, #0E5485, #010F18);
     position: relative;
     padding: 30px 0 45px 0;
     color: #fff;
@@ -359,6 +359,8 @@ ul#navigation li .glyphicon {
     background-color: black;
     background-color: rgba(0,0,0,0.5);
     padding:25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .biothumb .overlay h1{
@@ -579,6 +581,18 @@ ul.timeline .date {
     z-index: 3;
 }
 
+/* CSS for the Thumbnail Grid */
+.thumbnail2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the column width as needed */
+    gap: 20px; /* Adjust the gap between thumbnails */
+}
+
+/* CSS for Individual Thumbnails */
+.thumbnail2 {
+    padding: 20px;
+    border: 1px solid #ccc; /* Add borders for separation */
+}
 
 #main {
     left: 0;
