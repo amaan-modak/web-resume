@@ -27,7 +27,8 @@ $(document).ready(function(){
 		.to($("#main"),0.2,{left:250,right:"-=250"},"-=0.2");
 	
 
-	$("a.mobilemenu").on("click",function(){
+	$("a.mobilemenu").on("click",function(e){
+		e.preventDefault();
 		SidebarAnim.play();
 	});
 	$(".social-icons, #main-nav, #main").on("click",function(){
@@ -53,6 +54,7 @@ $(document).ready(function(){
 		pageContainer : $("div#main"),
 		pages : $("div.page"),
 		menuItems: $("ul#navigation"),
+		portrait: $("div#profile"),
 		overlay : $("div#overlay"),
 		topz : "500",
 		init: function(){
@@ -65,6 +67,7 @@ $(document).ready(function(){
 					$target = $($li.children('a').attr('href')),
 					currentPosition = $target.attr('data-pos'),
 					$secondary = self.pageContainer.children(".currentpage");
+
 				switch (currentPosition){
 					case "home" :
 						self.reset();
@@ -85,6 +88,22 @@ $(document).ready(function(){
 							self.forward($target,$secondary);
 						}
 					break;
+					default:
+						return false;
+				}
+			});
+
+			self.portrait.on('click',function(e){
+				
+				e.preventDefault();
+				var $li = $(this),
+					$target = $($li.children('a').attr('href')),
+					currentPosition = $target.attr('data-pos');
+					
+				switch (currentPosition){
+					case "home" :
+						self.reset();
+						break;
 					default:
 						return false;
 				}
