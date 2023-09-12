@@ -147,14 +147,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 #profile .portrait {
-    background-image: url(../img/amaan.jpg);
+    background-image: url(../img/profile.jpg);
     width: 150px;
     margin: 0 auto;
     height: 160px;
     display: block;
     float: none;
     clear: both;
-    border-radius: 40%;
+    border-radius: 30%;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
