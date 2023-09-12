@@ -1,0 +1,2564 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title data-rh="true">Unveiling the Art of Data Analysis:From Questions to Answers | by Amaan Modak | Aug, 2023 | Medium
+		</title>
+		<link data-rh="true" rel="icon" href="https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png"/>
+		<link data-rh="true" rel="search" type="application/opensearchdescription+xml" title="Medium" href="/osd.xml"/>
+		<link data-rh="true" rel="apple-touch-icon" sizes="152x152" href="https://miro.medium.com/v2/resize:fill:152:152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"/>
+		<link data-rh="true" rel="apple-touch-icon" sizes="120x120" href="https://miro.medium.com/v2/resize:fill:120:120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"/>
+		<link data-rh="true" rel="apple-touch-icon" sizes="76x76" href="https://miro.medium.com/v2/resize:fill:76:76/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"/>
+		<link data-rh="true" rel="apple-touch-icon" sizes="60x60" href="https://miro.medium.com/v2/resize:fill:60:60/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"/>
+		<link data-rh="true" rel="mask-icon" href="https://cdn-static-1.medium.com/_/fp/icons/Medium-Avatar-500x500.svg"/>
+		<link data-rh="true" id="glyph_preload_link" rel="preload" as="style" type="text/css" href="https://glyph.medium.com/css/unbound.css"/>
+		<link data-rh="true" id="glyph_link" rel="stylesheet" type="text/css" href="https://glyph.medium.com/css/unbound.css"/>
+		<link data-rh="true" rel="author" href="https://medium.com/@amaan.modak93"/>
+		<link data-rh="true" rel="canonical" href="https://medium.com/@amaan.modak93/unveiling-the-art-of-data-analysis-from-questions-to-answers-6b75ac91be53"/>
+		<link data-rh="true" rel="alternate" href="android-app://com.medium.reader/https/medium.com/p/6b75ac91be53"/>
+		<script data-rh="true" type="application/ld+json"> {
+			"@context":"http:\u002F\u002Fschema.org",
+			"@type":"NewsArticle",
+			"image":["https:\u002F\u002Fmiro.medium.com\u002Fv2\u002Fresize:fit:1200\u002F1*HCbzJ06rYcMKitLZcpYgxQ.jpeg"],
+			"url":"https:\u002F\u002Fmedium.com\u002F@amaan.modak93\u002Funveiling-the-art-of-data-analysis-from-questions-to-answers-6b75ac91be53",
+			"dateCreated":"2023-08-17T17:25:05.258Z",
+			"datePublished":"2023-08-17T17:25:05.258Z",
+			"dateModified":"2023-08-17T17:25:08.326Z",
+			"headline":"Unveiling the Art of Data Analysis:From Questions to Answers",
+			"name":"Unveiling the Art of Data Analysis:From Questions to Answers",
+			"identifier":"6b75ac91be53",
+			"author": {
+				"@type":"Person", "name":"Amaan Modak", "url":"https: \u002F\u002Fmedium.com\u002F@amaan.modak93"
+			}
+			
+			,
+			"creator":["Amaan Modak"],
+			"publisher": {
+				"@type":"Organization",
+				"name":"Medium",
+				"url":"https:\u002F\u002Fmedium.com\u002F",
+				"logo": {
+					"@type":"ImageObject", " width":308, " height":60, "url":"https: \u002F\u002Fmiro.medium.com\u002Fv2\u002Fresize:fit:616\u002F1*OMF3fSqH8t4xBJ9-6oZDZw.png"
+				}
+			
+			}
+			
+			, "mainEntityOfPage":"https:\u002F\u002Fmedium.com\u002F@amaan.modak93\u002Funveiling-the-art-of-data-analysis-from-questions-to-answers-6b75ac91be53"
+			}
+			
+		</script>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="STATIC">html {
+			box-sizing: border-box;
+			-webkit-text-size-adjust: 100%
+			}
+			*,
+			*:before,
+			*:after {
+			box-sizing: inherit
+			}
+			body {
+			margin: 0;
+			padding: 0;
+    		padding-bottom: 2%;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			color: rgba(0, 0, 0, 0.8);
+			position: relative;
+			min-height: 100vh
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			dl,
+			dd,
+			ol,
+			ul,
+			menu,
+			figure,
+			blockquote,
+			p,
+			pre,
+			form {
+			margin: 0
+			}
+			menu,
+			ol,
+			ul {
+			padding: 0;
+			list-style: none;
+			list-style-image: none
+			}
+			main {
+			display: block
+			}
+			a {
+			color: inherit;
+			text-decoration: none
+			}
+			a,
+			button,
+			input {
+			-webkit-tap-highlight-color: transparent
+			}
+			img,
+			svg {
+			vertical-align: middle
+			}
+			button {
+			background: transparent;
+			overflow: visible
+			}
+			button,
+			input,
+			optgroup,
+			select,
+			textarea {
+			margin: 0
+			}
+			:root {
+			--reach-tabs: 1;
+			--reach-menu-button: 1
+			}
+			#speechify-root {
+			font-family: Sohne, sans-serif
+			}
+			div[data-popper-reference-hidden="true"] {
+			visibility: hidden;
+			pointer-events: none
+			}
+			/*XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>*/
+			.hljs {
+			background: #fff;
+			color: black;
+			}
+			/* Gray DOCTYPE selectors like WebKit */
+			.xml .hljs-meta {
+			color: #c0c0c0;
+			}
+			.hljs-comment,
+			.hljs-quote {
+			color: #007400;
+			}
+			.hljs-tag,
+			.hljs-attribute,
+			.hljs-keyword,
+			.hljs-selector-tag,
+			.hljs-literal,
+			.hljs-name {
+			color: #aa0d91;
+			}
+			.hljs-variable,
+			.hljs-template-variable {
+			color: #3F6E74;
+			}
+			.hljs-code,
+			.hljs-string,
+			.hljs-meta .hljs-string {
+			color: #c41a16;
+			}
+			.hljs-regexp,
+			.hljs-link {
+			color: #0E0EFF;
+			}
+			.hljs-title,
+			.hljs-symbol,
+			.hljs-bullet,
+			.hljs-number {
+			color: #1c00cf;
+			}
+			.hljs-section,
+			.hljs-meta {
+			color: #643820;
+			}
+			.hljs-title.class_,
+			.hljs-class .hljs-title,
+			.hljs-type,
+			.hljs-built_in,
+			.hljs-params {
+			color: #5c2699;
+			}
+			.hljs-attr {
+			color: #836C28;
+			}
+			.hljs-subst {
+			color: #000;
+			}
+			.hljs-formula {
+			background-color: #eee;
+			font-style: italic;
+			}
+			.hljs-addition {
+			background-color: #baeeba;
+			}
+			.hljs-deletion {
+			background-color: #ffc8bd;
+			}
+			.hljs-selector-id,
+			.hljs-selector-class {
+			color: #9b703f;
+			}
+			.hljs-doctag,
+			.hljs-strong {
+			font-weight: bold;
+			}
+			.hljs-emphasis {
+			font-style: italic;
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="KEYFRAME">@-webkit-keyframes k1 {
+			0% {
+			opacity: 0.8
+			}
+			50% {
+			opacity: 0.5
+			}
+			100% {
+			opacity: 0.8
+			}
+			}
+			@-moz-keyframes k1 {
+			0% {
+			opacity: 0.8
+			}
+			50% {
+			opacity: 0.5
+			}
+			100% {
+			opacity: 0.8
+			}
+			}
+			@keyframes k1 {
+			0% {
+			opacity: 0.8
+			}
+			50% {
+			opacity: 0.5
+			}
+			100% {
+			opacity: 0.8
+			}
+			}
+			@-webkit-keyframes k2 {
+			0% {
+			transform: scale(1)
+			}
+			50% {
+			transform: scale(1.1)
+			}
+			100% {
+			transform: scale(1)
+			}
+			}
+			@-moz-keyframes k2 {
+			0% {
+			transform: scale(1)
+			}
+			50% {
+			transform: scale(1.1)
+			}
+			100% {
+			transform: scale(1)
+			}
+			}
+			@keyframes k2 {
+			0% {
+			transform: scale(1)
+			}
+			50% {
+			transform: scale(1.1)
+			}
+			100% {
+			transform: scale(1)
+			}
+			}
+			@-webkit-keyframes k3 {
+			0% {
+			transform: translate(-50%, -100px)
+			}
+			100% {
+			transform: translate(-50%, 0)
+			}
+			}
+			@-moz-keyframes k3 {
+			0% {
+			transform: translate(-50%, -100px)
+			}
+			100% {
+			transform: translate(-50%, 0)
+			}
+			}
+			@keyframes k3 {
+			0% {
+			transform: translate(-50%, -100px)
+			}
+			100% {
+			transform: translate(-50%, 0)
+			}
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE">.a {
+			font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+			}
+			.b {
+			font-weight: 400
+			}
+			.c {
+			background-color: rgba(255, 255, 255, 1)
+			}
+			.l {
+			display: block
+			}
+			.m {
+			position: sticky
+			}
+			.n {
+			top: 0
+			}
+			.o {
+			z-index: 500
+			}
+			.p {
+			padding: 0 24px
+			}
+			.q {
+			align-items: center
+			}
+			.r {
+			border-bottom: solid 1px #F2F2F2
+			}
+			.y {
+			height: 41px
+			}
+			.z {
+			line-height: 20px
+			}
+			.ab {
+			display: flex
+			}
+			.ac {
+			height: 57px
+			}
+			.ae {
+			flex: 1 0 auto
+			}
+			.af {
+			color: inherit
+			}
+			.ag {
+			fill: inherit
+			}
+			.ah {
+			font-size: inherit
+			}
+			.ai {
+			border: inherit
+			}
+			.aj {
+			font-family: inherit
+			}
+			.ak {
+			letter-spacing: inherit
+			}
+			.al {
+			font-weight: inherit
+			}
+			.am {
+			padding: 0
+			}
+			.an {
+			margin: 0
+			}
+			.ao {
+			cursor: pointer
+			}
+			.ap:disabled {
+			cursor: not-allowed
+			}
+			.aq:disabled {
+			color: #6B6B6B
+			}
+			.ar:disabled {
+			fill: #6B6B6B
+			}
+			.au {
+			height: 25px
+			}
+			.av {
+			fill: rgba(41, 41, 41, 1)
+			}
+			.aw {
+			margin-left: 16px
+			}
+			.ax {
+			border: none
+			}
+			.ay {
+			border-radius: 20px
+			}
+			.az {
+			width: 240px
+			}
+			.ba {
+			background: #F9F9F9
+			}
+			.bb path {
+			fill: #6B6B6B
+			}
+			.bd {
+			outline: none
+			}
+			.be {
+			font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif
+			}
+			.bf {
+			font-size: 14px
+			}
+			.bg {
+			width: 100%
+			}
+			.bh {
+			padding: 10px 20px 10px 0
+			}
+			.bi {
+			background-color: transparent
+			}
+			.bj {
+			color: #242424
+			}
+			.bk::placeholder {
+			color: #6B6B6B
+			}
+			.bl {
+			display: inline-block
+			}
+			.bm {
+			margin-left: 12px
+			}
+			.bn {
+			margin-right: 12px
+			}
+			.bo {
+			border-radius: 4px
+			}
+			.bp {
+			margin-left: 24px
+			}
+			.bq {
+			height: 24px
+			}
+			.bw {
+			background-color: #F9F9F9
+			}
+			.bx {
+			border-radius: 50%
+			}
+			.by {
+			height: 32px
+			}
+			.bz {
+			width: 32px
+			}
+			.ca {
+			justify-content: center
+			}
+			.cg {
+			max-width: 680px
+			}
+			.ch {
+			min-width: 0
+			}
+			.ci {
+			animation: k1 1.2s ease-in-out infinite
+			}
+			.cj {
+			height: 100vh
+			}
+			.ck {
+			margin-bottom: 16px
+			}
+			.cl {
+			margin-top: 48px
+			}
+			.cm {
+			align-items: flex-start
+			}
+			.cn {
+			flex-direction: column
+			}
+			.co {
+			justify-content: space-between
+			}
+			.cp {
+			margin-bottom: 24px
+			}
+			.cv {
+			width: 80%
+			}
+			.cw {
+			background-color: #F2F2F2
+			}
+			.dc {
+			height: 44px
+			}
+			.dd {
+			width: 44px
+			}
+			.de {
+			margin: auto 0
+			}
+			.df {
+			margin-bottom: 4px
+			}
+			.dg {
+			height: 16px
+			}
+			.dh {
+			width: 120px
+			}
+			.di {
+			width: 80px
+			}
+			.do {
+			margin-bottom: 8px
+			}
+			.dp {
+			width: 96%
+			}
+			.dq {
+			width: 98%
+			}
+			.dr {
+			width: 81%
+			}
+			.du {
+			margin-left: 8px
+			}
+			.dv {
+			color: #6B6B6B
+			}
+			.dw {
+			font-size: 13px
+			}
+			.dx {
+			height: 100%
+			}
+			.ea {
+			margin-right: 32px
+			}
+			.eb {
+			position: relative
+			}
+			.ec {
+			fill: #6B6B6B
+			}
+			.ef {
+			background: transparent
+			}
+			.eg svg {
+			margin-left: 4px
+			}
+			.eh svg {
+			fill: #6B6B6B
+			}
+			.ej {
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05)
+			}
+			.ek {
+			position: absolute
+			}
+			.em {
+			box-sizing: border-box
+			}
+			.et {
+			margin: 0 24px
+			}
+			.ex {
+			background: rgba(255, 255, 255, 1)
+			}
+			.ey {
+			border: 1px solid #F2F2F2
+			}
+			.ez {
+			box-shadow: 0 1px 4px #F2F2F2
+			}
+			.fa {
+			max-height: 100vh
+			}
+			.fb {
+			overflow-y: auto
+			}
+			.fc {
+			left: 0
+			}
+			.fd {
+			top: calc(100vh + 100px)
+			}
+			.fe {
+			bottom: calc(100vh + 100px)
+			}
+			.ff {
+			width: 10px
+			}
+			.fg {
+			pointer-events: none
+			}
+			.fh {
+			word-break: break-word
+			}
+			.fi {
+			word-wrap: break-word
+			}
+			.fj:after {
+			display: block
+			}
+			.fk:after {
+			content: ""
+			}
+			.fl:after {
+			clear: both
+			}
+			.fm {
+			line-height: 1.23
+			}
+			.fn {
+			letter-spacing: 0
+			}
+			.fo {
+			font-style: normal
+			}
+			.fp {
+			font-weight: 700
+			}
+			.gz {
+			align-items: baseline
+			}
+			.ha {
+			width: 48px
+			}
+			.hb {
+			height: 48px
+			}
+			.hc {
+			border: 2px solid rgba(255, 255, 255, 1)
+			}
+			.hd {
+			z-index: 0
+			}
+			.he {
+			box-shadow: none
+			}
+			.hf {
+			border: 1px solid rgba(0, 0, 0, 0.05)
+			}
+			.hh {
+			margin-bottom: 2px
+			}
+			.hi {
+			flex-wrap: nowrap
+			}
+			.hj {
+			font-size: 16px
+			}
+			.hk {
+			line-height: 24px
+			}
+			.hm {
+			flex: 0 0 auto
+			}
+			.hp {
+			flex-wrap: wrap
+			}
+			.hq {
+			padding-left: 8px
+			}
+			.hr {
+			padding-right: 8px
+			}
+			.is> * {
+			flex-shrink: 0
+			}
+			.it {
+			overflow-x: scroll
+			}
+			.iu::-webkit-scrollbar {
+			display: none
+			}
+			.iv {
+			scrollbar-width: none
+			}
+			.iw {
+			-ms-overflow-style: none
+			}
+			.ix {
+			width: 74px
+			}
+			.iy {
+			flex-direction: row
+			}
+			.iz {
+			margin-right: 4px
+			}
+			.jc {
+			-webkit-user-select: none
+			}
+			.jd {
+			border: 0
+			}
+			.je {
+			cursor: progress
+			}
+			.jf {
+			fill: rgba(117, 117, 117, 1)
+			}
+			.ji {
+			opacity: 0.25
+			}
+			.jj {
+			outline: 0
+			}
+			.jk {
+			user-select: none
+			}
+			.jl> svg {
+			pointer-events: none
+			}
+			.ju {
+			opacity: 1
+			}
+			.jv {
+			padding: 4px 0
+			}
+			.jy {
+			margin-top: 0px
+			}
+			.jz {
+			width: 16px
+			}
+			.ka {
+			padding: 8px 2px
+			}
+			.kb:disabled {
+			opacity: 0.3
+			}
+			.ke svg path {
+			fill: #6B6B6B
+			}
+			.kf path {
+			fill: #242424
+			}
+			.kg svg {
+			color: #6B6B6B
+			}
+			.kx {
+			margin-left: auto
+			}
+			.ky {
+			margin-right: auto
+			}
+			.kz {
+			max-width: 2751px
+			}
+			.lf {
+			clear: both
+			}
+			.lh {
+			cursor: zoom-in
+			}
+			.li {
+			z-index: auto
+			}
+			.lk {
+			max-width: 100%
+			}
+			.ll {
+			height: auto
+			}
+			.lm {
+			box-shadow: inset 3px 0 0 0 #242424
+			}
+			.ln {
+			padding-left: 23px
+			}
+			.lo {
+			margin-left: -20px
+			}
+			.lp {
+			line-height: 1.58
+			}
+			.lq {
+			letter-spacing: -0.004em
+			}
+			.lr {
+			font-style: italic
+			}
+			.ls {
+			font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif
+			}
+			.mn {
+			margin-bottom: -0.46em
+			}
+			.mr {
+			line-height: 1.12
+			}
+			.ms {
+			letter-spacing: -0.022em
+			}
+			.mt {
+			font-weight: 600
+			}
+			.no {
+			margin-bottom: -0.28em
+			}
+			.nu {
+			list-style-type: disc
+			}
+			.nv {
+			margin-left: 30px
+			}
+			.nw {
+			padding-left: 0px
+			}
+			.oc {
+			list-style-type: decimal
+			}
+			.od {
+			max-width: 1394px
+			}
+			.oj {
+			margin-top: 10px
+			}
+			.ok {
+			text-align: center
+			}
+			.ol {
+			max-width: 728px
+			}
+			.oo {
+			margin-bottom: 26px
+			}
+			.op {
+			margin-top: 6px
+			}
+			.oq {
+			margin-top: 8px
+			}
+			.or {
+			margin-right: 8px
+			}
+			.os {
+			padding: 8px 16px
+			}
+			.ot {
+			border-radius: 100px
+			}
+			.ou {
+			transition: background 300ms ease
+			}
+			.ow {
+			white-space: nowrap
+			}
+			.ox {
+			border-top: none
+			}
+			.pd {
+			height: 52px
+			}
+			.pe {
+			max-height: 52px
+			}
+			.pf {
+			box-sizing: content-box
+			}
+			.pg {
+			position: static
+			}
+			.ph {
+			z-index: 1
+			}
+			.pj {
+			max-width: 155px
+			}
+			.pp {
+			margin-right: 20px
+			}
+			.pv {
+			align-items: flex-end
+			}
+			.pw {
+			width: 76px
+			}
+			.px {
+			height: 76px
+			}
+			.py {
+			border: 2px solid #F9F9F9
+			}
+			.pz {
+			height: 72px
+			}
+			.qa {
+			width: 72px
+			}
+			.qb {
+			color: #FFFFFF
+			}
+			.qc {
+			padding: 5px 12px
+			}
+			.qd {
+			fill: #FFFFFF
+			}
+			.qe {
+			background: #1A8917
+			}
+			.qf {
+			border-color: #1A8917
+			}
+			.qj:disabled {
+			cursor: inherit !important
+			}
+			.qk:disabled:hover {
+			background: #1A8917
+			}
+			.ql:disabled:hover {
+			border-color: #1A8917
+			}
+			.qm {
+			border-radius: 99em
+			}
+			.qn {
+			border-width: 1px
+			}
+			.qo {
+			border-style: solid
+			}
+			.qp {
+			text-decoration: none
+			}
+			.qq {
+			font-weight: 500
+			}
+			.qr {
+			font-size: 24px
+			}
+			.qs {
+			line-height: 30px
+			}
+			.qt {
+			letter-spacing: -0.016em
+			}
+			.qu {
+			margin-top: 16px
+			}
+			.qv {
+			height: 0px
+			}
+			.qw {
+			border-bottom: solid 1px #E5E5E5
+			}
+			.qx {
+			margin-top: 72px
+			}
+			.qy {
+			padding: 24px 0
+			}
+			.qz {
+			margin-bottom: 0px
+			}
+			.ra {
+			margin-right: 16px
+			}
+			.rb {
+			display: inline-flex
+			}
+			.rh {
+			margin-right: -4px
+			}
+			.ri {
+			margin-bottom: 32px
+			}
+			.rj {
+			margin-top: 40px
+			}
+			.rk {
+			align-items: stretch
+			}
+			.su {
+			flex-grow: 0
+			}
+			.ta {
+			display: grid
+			}
+			.tb {
+			grid-template-columns: repeat(12, 1fr)
+			}
+			.tc {
+			grid-template-rows: auto 1fr
+			}
+			.tn {
+			grid-area: image
+			}
+			.to {
+			grid-area: content
+			}
+			.tu {
+			border-radius: 2px
+			}
+			.tv {
+			aspect-ratio: 2
+			}
+			.tw {
+			object-fit: cover
+			}
+			.tx {
+			object-position: 50% 50%
+			}
+			.ud {
+			height: 20px
+			}
+			.ue {
+			width: 20px
+			}
+			.uf {
+			padding-right: 4px
+			}
+			.ug {
+			overflow: hidden
+			}
+			.uh {
+			max-height: 20px
+			}
+			.ui {
+			text-overflow: ellipsis
+			}
+			.uj {
+			display: -webkit-box
+			}
+			.uk {
+			-webkit-line-clamp: 1
+			}
+			.ul {
+			-webkit-box-orient: vertical
+			}
+			.um {
+			word-break: break-all
+			}
+			.vo {
+			margin: 0 8px
+			}
+			.we {
+			margin-left: 20px
+			}
+			.wf {
+			justify-content: flex-end
+			}
+			.wg {
+			flex: 0 0 0
+			}
+			.wh {
+			padding-left: 24px
+			}
+			.wn {
+			flex: 1 1 auto
+			}
+			.xj {
+			padding-top: 24px
+			}
+			.xu {
+			padding-top: 16px
+			}
+			.ye {
+			fill: #242424
+			}
+			.yf {
+			background: 0
+			}
+			.yg {
+			border-color: #242424
+			}
+			.yj:disabled:hover {
+			color: #242424
+			}
+			.yk:disabled:hover {
+			fill: #242424
+			}
+			.yl:disabled:hover {
+			border-color: #242424
+			}
+			.yw {
+			padding-bottom: 40px
+			}
+			.yx {
+			padding-top: 88px
+			}
+			.yy {
+			padding-top: 8px
+			}
+			.yz {
+			max-height: 40px
+			}
+			.za {
+			-webkit-line-clamp: 2
+			}
+			.zb {
+			margin-left: 4px
+			}
+			.zc {
+			margin-top: 32px
+			}
+			.zd {
+			margin-bottom: 40px
+			}
+			.ze {
+			margin-top: 4px
+			}
+			.zf {
+			border-right: 3px solid #F9F9F9
+			}
+			.zg {
+			z-index: 3
+			}
+			.zh {
+			z-index: 2
+			}
+			.zi {
+			margin-left: -24px
+			}
+			.zj {
+			margin-left: -36px
+			}
+			.zk {
+			border-radius: 0 3px 3px 0
+			}
+			.zl {
+			width: 93px
+			}
+			.as:hover:not(:disabled) {
+			color: rgba(25, 25, 25, 1)
+			}
+			.at:hover:not(:disabled) {
+			fill: rgba(25, 25, 25, 1)
+			}
+			.ed:hover {
+			color: #242424
+			}
+			.ee:hover {
+			fill: #242424
+			}
+			.ei:hover svg {
+			fill: #242424
+			}
+			.el:hover {
+			background-color: none
+			}
+			.hg:hover {
+			background-color: rgba(0, 0, 0, 0.1)
+			}
+			.hl:hover {
+			text-decoration: underline
+			}
+			.jh:hover {
+			fill: rgba(117, 117, 117, 1)
+			}
+			.jw:hover {
+			fill: #000000
+			}
+			.jx:hover p {
+			color: #000000
+			}
+			.kc:hover:not(:disabled) svg path {
+			fill: #000000
+			}
+			.kh:hover svg {
+			color: #000000
+			}
+			.ov:hover {
+			background-color: #F2F2F2
+			}
+			.qg:hover {
+			background: #156D12
+			}
+			.qh:hover {
+			border-color: #156D12
+			}
+			.qi:hover {
+			cursor: pointer
+			}
+			.yh:hover {
+			color: #000000
+			}
+			.yi:hover {
+			border-color: #242424
+			}
+			.bc:focus-within path {
+			fill: #242424
+			}
+			.jg:focus {
+			fill: rgba(117, 117, 117, 1)
+			}
+			.kd:focus svg path {
+			fill: #000000
+			}
+			.ki:focus svg {
+			color: #000000
+			}
+			.lj:focus {
+			transform: scale(1.01)
+			}
+			.jm:active {
+			border-style: none
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (min-width: 1080px)">.d {
+			display: none
+			}
+			.bv {
+			width: 64px
+			}
+			.cf {
+			margin: 0 64px
+			}
+			.cu {
+			height: 48px
+			}
+			.db {
+			margin-bottom: 52px
+			}
+			.dn {
+			margin-bottom: 48px
+			}
+			.dz {
+			display: flex
+			}
+			.es {
+			margin-bottom: 68px
+			}
+			.ew {
+			max-width: 680px
+			}
+			.gk {
+			font-size: 42px
+			}
+			.gl {
+			margin-top: 1.19em
+			}
+			.gm {
+			margin-bottom: 32px
+			}
+			.gn {
+			line-height: 52px
+			}
+			.go {
+			letter-spacing: -0.011em
+			}
+			.gy {
+			align-items: center
+			}
+			.ie {
+			border-top: solid 1px #F2F2F2
+			}
+			.if {
+			border-bottom: solid 1px #F2F2F2
+			}
+			.ig {
+			margin: 32px 0 0
+			}
+			.ih {
+			padding: 3px 8px
+			}
+			.iq> * {
+			margin-right: 24px
+			}
+			.ir>:last-child {
+			margin-right: 0
+			}
+			.jt {
+			margin-top: 0px
+			}
+			.le {
+			margin-top: 40px
+			}
+			.mj {
+			font-size: 21px
+			}
+			.mk {
+			margin-top: 2em
+			}
+			.ml {
+			line-height: 32px
+			}
+			.mm {
+			letter-spacing: -0.003em
+			}
+			.mq {
+			font-size: 20px
+			}
+			.nk {
+			font-size: 24px
+			}
+			.nl {
+			margin-top: 1.95em
+			}
+			.nm {
+			line-height: 30px
+			}
+			.nn {
+			letter-spacing: -0.016em
+			}
+			.nt {
+			margin-top: 0.86em
+			}
+			.ob {
+			margin-top: 1.05em
+			}
+			.oi {
+			margin-top: 56px
+			}
+			.pc {
+			margin-bottom: 88px
+			}
+			.po {
+			display: inline-block
+			}
+			.pu {
+			padding-top: 72px
+			}
+			.rg {
+			margin: 0
+			}
+			.rx {
+			width: calc(100% + 32px)
+			}
+			.ry {
+			margin-left: -16px
+			}
+			.rz {
+			margin-right: -16px
+			}
+			.sq {
+			padding-left: 16px
+			}
+			.sr {
+			padding-right: 16px
+			}
+			.ss {
+			flex-basis: 50%
+			}
+			.st {
+			max-width: 50%
+			}
+			.sz {
+			padding-bottom: 56px
+			}
+			.tl {
+			gap: 24px 0
+			}
+			.tm {
+			grid-template-areas: "image image image image image image image image image image image image" "content content content content content content content content content content content content"
+			}
+			.tt {
+			display: block
+			}
+			.uc {
+			margin-bottom: 16px
+			}
+			.uw {
+			padding-bottom: 16px
+			}
+			.ux {
+			flex: 1 0 auto
+			}
+			.vk {
+			line-height: 24px
+			}
+			.vl {
+			max-height: 48px
+			}
+			.vm {
+			-webkit-line-clamp: 2
+			}
+			.vn {
+			letter-spacing: 0
+			}
+			.vt {
+			padding-top: 16px
+			}
+			.wc {
+			max-width: 56%
+			}
+			.wd {
+			flex: 1 0 0
+			}
+			.wm {
+			margin-bottom: 20px
+			}
+			.xc {
+			max-height: 90px
+			}
+			.xd {
+			-webkit-line-clamp: 3
+			}
+			.xi {
+			padding-top: 20px
+			}
+			.xo {
+			max-width: unset
+			}
+			.xt {
+			margin-left: 56px
+			}
+			.xz {
+			margin-top: 24px
+			}
+			.ya {
+			margin-bottom: 24px
+			}
+			.yd {
+			flex-direction: row
+			}
+			.yq {
+			width: min-width
+			}
+			.yv {
+			margin-top: 96px
+			}
+			.zq {
+			margin-bottom: 56px
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (max-width: 1079.98px)">.e {
+			display: none
+			}
+			.js {
+			margin-top: 0px
+			}
+			.om {
+			margin-left: auto
+			}
+			.on {
+			text-align: center
+			}
+			.pn {
+			display: inline-block
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (max-width: 903.98px)">.f {
+			display: none
+			}
+			.jr {
+			margin-top: 0px
+			}
+			.pm {
+			display: inline-block
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (max-width: 727.98px)">.g {
+			display: none
+			}
+			.jp {
+			margin-top: 0px
+			}
+			.jq {
+			margin-right: 0px
+			}
+			.pl {
+			display: inline-block
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (max-width: 551.98px)">.h {
+			display: none
+			}
+			.s {
+			display: flex
+			}
+			.t {
+			justify-content: space-between
+			}
+			.br {
+			width: 24px
+			}
+			.cb {
+			margin: 0 24px
+			}
+			.cq {
+			height: 40px
+			}
+			.cx {
+			margin-bottom: 44px
+			}
+			.dj {
+			margin-bottom: 32px
+			}
+			.ds {
+			justify-content: center
+			}
+			.eo {
+			margin-bottom: 4px
+			}
+			.fq {
+			font-size: 32px
+			}
+			.fr {
+			margin-top: 1.01em
+			}
+			.fs {
+			margin-bottom: 24px
+			}
+			.ft {
+			line-height: 38px
+			}
+			.fu {
+			letter-spacing: -0.014em
+			}
+			.gu {
+			align-items: flex-start
+			}
+			.hn {
+			flex-direction: column
+			}
+			.hs {
+			margin: 24px -24px 0
+			}
+			.ht {
+			padding: 0
+			}
+			.ii> * {
+			margin-right: 8px
+			}
+			.ij>:last-child {
+			margin-right: 24px
+			}
+			.ja {
+			margin-left: 0px
+			}
+			.jn {
+			margin-top: 0px
+			}
+			.jo {
+			margin-right: 0px
+			}
+			.kj {
+			border: 1px solid #F2F2F2
+			}
+			.kk {
+			border-radius: 99em
+			}
+			.kl {
+			padding: 0px 16px 0px 12px
+			}
+			.km {
+			height: 38px
+			}
+			.kn {
+			align-items: center
+			}
+			.kp svg {
+			margin-right: 8px
+			}
+			.la {
+			margin-top: 32px
+			}
+			.lt {
+			font-size: 18px
+			}
+			.lu {
+			margin-top: 1.56em
+			}
+			.lv {
+			line-height: 28px
+			}
+			.lw {
+			letter-spacing: -0.003em
+			}
+			.mu {
+			font-size: 20px
+			}
+			.mv {
+			margin-top: 1.2em
+			}
+			.mw {
+			line-height: 24px
+			}
+			.mx {
+			letter-spacing: 0
+			}
+			.np {
+			margin-top: 0.67em
+			}
+			.nx {
+			margin-top: 1.34em
+			}
+			.oe {
+			margin-top: 40px
+			}
+			.oy {
+			margin-bottom: 80px
+			}
+			.pk {
+			display: inline-block
+			}
+			.pq {
+			padding-top: 48px
+			}
+			.rc {
+			margin: 0
+			}
+			.rl {
+			width: calc(100% + 24px)
+			}
+			.rm {
+			margin-left: -12px
+			}
+			.rn {
+			margin-right: -12px
+			}
+			.sa {
+			padding-left: 12px
+			}
+			.sb {
+			padding-right: 12px
+			}
+			.sc {
+			flex-basis: 100%
+			}
+			.sd {
+			max-width: 100%
+			}
+			.sv {
+			padding-bottom: 32px
+			}
+			.td {
+			gap: 24px 0
+			}
+			.te {
+			grid-template-areas: "image image image image image image image image image image image image" "content content content content content content content content content content content content"
+			}
+			.tp {
+			display: block
+			}
+			.ty {
+			margin-bottom: 16px
+			}
+			.uo {
+			padding-bottom: 16px
+			}
+			.up {
+			flex: 1 0 auto
+			}
+			.uy {
+			max-height: 48px
+			}
+			.uz {
+			-webkit-line-clamp: 2
+			}
+			.vp {
+			padding-top: 16px
+			}
+			.vu {
+			max-width: 56%
+			}
+			.vv {
+			flex: 1 0 0
+			}
+			.wi {
+			margin-bottom: 20px
+			}
+			.wo {
+			font-size: 24px
+			}
+			.wp {
+			line-height: 30px
+			}
+			.wq {
+			max-height: 90px
+			}
+			.wr {
+			-webkit-line-clamp: 3
+			}
+			.ws {
+			letter-spacing: -0.016em
+			}
+			.xe {
+			padding-top: 20px
+			}
+			.xk {
+			max-width: unset
+			}
+			.xp {
+			margin-left: 56px
+			}
+			.ym {
+			width: 100%
+			}
+			.yr {
+			margin-top: 72px
+			}
+			.zm {
+			margin-top: 16px
+			}
+			.ko:hover {
+			border-color: #E5E5E5
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (min-width: 904px) and (max-width: 1079.98px)">.i {
+			display: none
+			}
+			.bu {
+			width: 64px
+			}
+			.ce {
+			margin: 0 64px
+			}
+			.ct {
+			height: 48px
+			}
+			.da {
+			margin-bottom: 52px
+			}
+			.dm {
+			margin-bottom: 48px
+			}
+			.dy {
+			display: flex
+			}
+			.er {
+			margin-bottom: 68px
+			}
+			.ev {
+			max-width: 680px
+			}
+			.gf {
+			font-size: 42px
+			}
+			.gg {
+			margin-top: 1.19em
+			}
+			.gh {
+			margin-bottom: 32px
+			}
+			.gi {
+			line-height: 52px
+			}
+			.gj {
+			letter-spacing: -0.011em
+			}
+			.gx {
+			align-items: center
+			}
+			.ia {
+			border-top: solid 1px #F2F2F2
+			}
+			.ib {
+			border-bottom: solid 1px #F2F2F2
+			}
+			.ic {
+			margin: 32px 0 0
+			}
+			.id {
+			padding: 3px 8px
+			}
+			.io> * {
+			margin-right: 24px
+			}
+			.ip>:last-child {
+			margin-right: 0
+			}
+			.ld {
+			margin-top: 40px
+			}
+			.mf {
+			font-size: 21px
+			}
+			.mg {
+			margin-top: 2em
+			}
+			.mh {
+			line-height: 32px
+			}
+			.mi {
+			letter-spacing: -0.003em
+			}
+			.mp {
+			font-size: 20px
+			}
+			.ng {
+			font-size: 24px
+			}
+			.nh {
+			margin-top: 1.95em
+			}
+			.ni {
+			line-height: 30px
+			}
+			.nj {
+			letter-spacing: -0.016em
+			}
+			.ns {
+			margin-top: 0.86em
+			}
+			.oa {
+			margin-top: 1.05em
+			}
+			.oh {
+			margin-top: 56px
+			}
+			.pb {
+			margin-bottom: 88px
+			}
+			.pt {
+			padding-top: 72px
+			}
+			.rf {
+			margin: 0
+			}
+			.ru {
+			width: calc(100% + 32px)
+			}
+			.rv {
+			margin-left: -16px
+			}
+			.rw {
+			margin-right: -16px
+			}
+			.sm {
+			padding-left: 16px
+			}
+			.sn {
+			padding-right: 16px
+			}
+			.so {
+			flex-basis: 50%
+			}
+			.sp {
+			max-width: 50%
+			}
+			.sy {
+			padding-bottom: 56px
+			}
+			.tj {
+			gap: 24px 0
+			}
+			.tk {
+			grid-template-areas: "image image image image image image image image image image image image" "content content content content content content content content content content content content"
+			}
+			.ts {
+			display: block
+			}
+			.ub {
+			margin-bottom: 16px
+			}
+			.uu {
+			padding-bottom: 16px
+			}
+			.uv {
+			flex: 1 0 auto
+			}
+			.vg {
+			line-height: 24px
+			}
+			.vh {
+			max-height: 48px
+			}
+			.vi {
+			-webkit-line-clamp: 2
+			}
+			.vj {
+			letter-spacing: 0
+			}
+			.vs {
+			padding-top: 16px
+			}
+			.wa {
+			max-width: 56%
+			}
+			.wb {
+			flex: 1 0 0
+			}
+			.wl {
+			margin-bottom: 20px
+			}
+			.xa {
+			max-height: 90px
+			}
+			.xb {
+			-webkit-line-clamp: 3
+			}
+			.xh {
+			padding-top: 20px
+			}
+			.xn {
+			max-width: unset
+			}
+			.xs {
+			margin-left: 56px
+			}
+			.xx {
+			margin-top: 24px
+			}
+			.xy {
+			margin-bottom: 24px
+			}
+			.yc {
+			flex-direction: row
+			}
+			.yp {
+			width: min-width
+			}
+			.yu {
+			margin-top: 96px
+			}
+			.zp {
+			margin-bottom: 56px
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (min-width: 728px) and (max-width: 903.98px)">.j {
+			display: none
+			}
+			.w {
+			display: flex
+			}
+			.x {
+			justify-content: flex-end
+			}
+			.bt {
+			width: 64px
+			}
+			.cd {
+			margin: 0 48px
+			}
+			.cs {
+			height: 48px
+			}
+			.cz {
+			margin-bottom: 52px
+			}
+			.dl {
+			margin-bottom: 48px
+			}
+			.eq {
+			margin-bottom: 68px
+			}
+			.eu {
+			max-width: 680px
+			}
+			.ga {
+			font-size: 42px
+			}
+			.gb {
+			margin-top: 1.19em
+			}
+			.gc {
+			margin-bottom: 32px
+			}
+			.gd {
+			line-height: 52px
+			}
+			.ge {
+			letter-spacing: -0.011em
+			}
+			.gw {
+			align-items: center
+			}
+			.hw {
+			border-top: solid 1px #F2F2F2
+			}
+			.hx {
+			border-bottom: solid 1px #F2F2F2
+			}
+			.hy {
+			margin: 32px 0 0
+			}
+			.hz {
+			padding: 3px 8px
+			}
+			.im> * {
+			margin-right: 24px
+			}
+			.in>:last-child {
+			margin-right: 0
+			}
+			.lc {
+			margin-top: 40px
+			}
+			.mb {
+			font-size: 21px
+			}
+			.mc {
+			margin-top: 2em
+			}
+			.md {
+			line-height: 32px
+			}
+			.me {
+			letter-spacing: -0.003em
+			}
+			.mo {
+			font-size: 20px
+			}
+			.nc {
+			font-size: 24px
+			}
+			.nd {
+			margin-top: 1.95em
+			}
+			.ne {
+			line-height: 30px
+			}
+			.nf {
+			letter-spacing: -0.016em
+			}
+			.nr {
+			margin-top: 0.86em
+			}
+			.nz {
+			margin-top: 1.05em
+			}
+			.og {
+			margin-top: 56px
+			}
+			.pa {
+			margin-bottom: 88px
+			}
+			.ps {
+			padding-top: 72px
+			}
+			.re {
+			margin: 0
+			}
+			.rr {
+			width: calc(100% + 28px)
+			}
+			.rs {
+			margin-left: -14px
+			}
+			.rt {
+			margin-right: -14px
+			}
+			.si {
+			padding-left: 14px
+			}
+			.sj {
+			padding-right: 14px
+			}
+			.sk {
+			flex-basis: 50%
+			}
+			.sl {
+			max-width: 50%
+			}
+			.sx {
+			padding-bottom: 56px
+			}
+			.th {
+			gap: 24px 0
+			}
+			.ti {
+			grid-template-areas: "image image image image image image image image image image image image" "content content content content content content content content content content content content"
+			}
+			.tr {
+			display: block
+			}
+			.ua {
+			margin-bottom: 16px
+			}
+			.us {
+			padding-bottom: 16px
+			}
+			.ut {
+			flex: 1 0 auto
+			}
+			.vc {
+			line-height: 24px
+			}
+			.vd {
+			max-height: 48px
+			}
+			.ve {
+			-webkit-line-clamp: 2
+			}
+			.vf {
+			letter-spacing: 0
+			}
+			.vr {
+			padding-top: 16px
+			}
+			.vy {
+			max-width: 56%
+			}
+			.vz {
+			flex: 1 0 0
+			}
+			.wk {
+			margin-bottom: 20px
+			}
+			.wy {
+			max-height: 90px
+			}
+			.wz {
+			-webkit-line-clamp: 3
+			}
+			.xg {
+			padding-top: 20px
+			}
+			.xm {
+			max-width: unset
+			}
+			.xr {
+			margin-left: 56px
+			}
+			.xv {
+			margin-top: 24px
+			}
+			.xw {
+			margin-bottom: 24px
+			}
+			.yb {
+			flex-direction: row
+			}
+			.yo {
+			width: min-width
+			}
+			.yt {
+			margin-top: 96px
+			}
+			.zo {
+			margin-bottom: 56px
+			}
+		</style>
+		<style type="text/css" data-fela-rehydration="692" data-fela-type="RULE" media="all and (min-width: 552px) and (max-width: 727.98px)">.k {
+			display: none
+			}
+			.u {
+			display: flex
+			}
+			.v {
+			justify-content: space-between
+			}
+			.bs {
+			width: 24px
+			}
+			.cc {
+			margin: 0 24px
+			}
+			.cr {
+			height: 40px
+			}
+			.cy {
+			margin-bottom: 44px
+			}
+			.dk {
+			margin-bottom: 32px
+			}
+			.dt {
+			justify-content: center
+			}
+			.ep {
+			margin-bottom: 4px
+			}
+			.fv {
+			font-size: 32px
+			}
+			.fw {
+			margin-top: 1.01em
+			}
+			.fx {
+			margin-bottom: 24px
+			}
+			.fy {
+			line-height: 38px
+			}
+			.fz {
+			letter-spacing: -0.014em
+			}
+			.gv {
+			align-items: flex-start
+			}
+			.ho {
+			flex-direction: column
+			}
+			.hu {
+			margin: 24px 0 0
+			}
+			.hv {
+			padding: 0
+			}
+			.ik> * {
+			margin-right: 8px
+			}
+			.il>:last-child {
+			margin-right: 8px
+			}
+			.jb {
+			margin-left: 0px
+			}
+			.kq {
+			border: 1px solid #F2F2F2
+			}
+			.kr {
+			border-radius: 99em
+			}
+			.ks {
+			padding: 0px 16px 0px 12px
+			}
+			.kt {
+			height: 38px
+			}
+			.ku {
+			align-items: center
+			}
+			.kw svg {
+			margin-right: 8px
+			}
+			.lb {
+			margin-top: 32px
+			}
+			.lx {
+			font-size: 18px
+			}
+			.ly {
+			margin-top: 1.56em
+			}
+			.lz {
+			line-height: 28px
+			}
+			.ma {
+			letter-spacing: -0.003em
+			}
+			.my {
+			font-size: 20px
+			}
+			.mz {
+			margin-top: 1.2em
+			}
+			.na {
+			line-height: 24px
+			}
+			.nb {
+			letter-spacing: 0
+			}
+			.nq {
+			margin-top: 0.67em
+			}
+			.ny {
+			margin-top: 1.34em
+			}
+			.of {
+			margin-top: 40px
+			}
+			.oz {
+			margin-bottom: 80px
+			}
+			.pr {
+			padding-top: 48px
+			}
+			.rd {
+			margin: 0
+			}
+			.ro {
+			width: calc(100% + 24px)
+			}
+			.rp {
+			margin-left: -12px
+			}
+			.rq {
+			margin-right: -12px
+			}
+			.se {
+			padding-left: 12px
+			}
+			.sf {
+			padding-right: 12px
+			}
+			.sg {
+			flex-basis: 100%
+			}
+			.sh {
+			max-width: 100%
+			}
+			.sw {
+			padding-bottom: 32px
+			}
+			.tf {
+			gap: 24px 0
+			}
+			.tg {
+			grid-template-areas: "image image image image image image image image image image image image" "content content content content content content content content content content content content"
+			}
+			.tq {
+			display: block
+			}
+			.tz {
+			margin-bottom: 16px
+			}
+			.uq {
+			padding-bottom: 16px
+			}
+			.ur {
+			flex: 1 0 auto
+			}
+			.va {
+			max-height: 48px
+			}
+			.vb {
+			-webkit-line-clamp: 2
+			}
+			.vq {
+			padding-top: 16px
+			}
+			.vw {
+			max-width: 56%
+			}
+			.vx {
+			flex: 1 0 0
+			}
+			.wj {
+			margin-bottom: 20px
+			}
+			.wt {
+			font-size: 24px
+			}
+			.wu {
+			line-height: 30px
+			}
+			.wv {
+			max-height: 90px
+			}
+			.ww {
+			-webkit-line-clamp: 3
+			}
+			.wx {
+			letter-spacing: -0.016em
+			}
+			.xf {
+			padding-top: 20px
+			}
+			.xl {
+			max-width: unset
+			}
+			.xq {
+			margin-left: 56px
+			}
+			.yn {
+			width: 100%
+			}
+			.ys {
+			margin-top: 72px
+			}
+			.zn {
+			margin-top: 16px
+			}
+			.kv:hover {
+			border-color: #E5E5E5
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<div class="a b c">
+				<div class="d e f g h i j k"></div>
+				<script>document.domain = document.domain;</script>
+				<div class="l c">
+					<div class="l">
+						<div class="eo ep eq er es l">
+							<article>
+								<div class="l">
+									<div class="l">
+										<span class="l">
+										</span>
+										<section>
+											<div>
+												<div class="fh fi fj fk fl">
+													<div class="ab ca">
+														<div class="ch bg et eu ev ew">
+															<div class="">
+																<h1 id="91a3" class="pw-post-title fm fn fo be fp fq fr fs ft fu fv fw fx fy fz ga gb gc gd ge gf gg gh gi gj gk gl gm gn go bj" data-testid="storyTitle">Unveiling the Art of Data Analysis: From Questions to Answers</h1>
+																<div class="gp gq gr gs gt">
+																	<div class="speechify-ignore ab co">
+																		<div class="speechify-ignore bg l">
+																			<div class="gu gv gw gx gy ab">
+																				<div>
+																					<div class="ab gz">
+																						<a href="/@amaan.modak93?source=post_page-----6b75ac91be53--------------------------------">
+																							<div>
+																								<div class="bl" aria-hidden="false">
+																									<div class="l ha hb bx hc hd">
+																										<div class="l eb">
+																											<img alt="Amaan Modak" class="l em bx dc dd cw" src="https://miro.medium.com/v2/resize:fill:88:88/0*X698ka6hb00XaR_g" width="44" height="44" data-testid="authorPhoto"/>
+																											<div class="he bx l dc dd ek n hf hg"></div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																				</div>
+																				<div class="bm bg l">
+																					<div class="ab">
+																						<div style="flex:1">
+																							<span class="be b bf z bj">
+																								<div class="hh ab q">
+																									<div class="ab q hi">
+																										<div class="ab q">
+																											<div>
+																												<div class="bl" aria-hidden="false">
+																													<p class="be b hj hk bj">
+																														<a class="af ag ah ai aj ak al am an ao ap aq ar hl" data-testid="authorName" href="/@amaan.modak93?source=post_page-----6b75ac91be53--------------------------------">Amaan Modak
+																														</a>
+																													</p>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</span>
+																						</div>
+																					</div>
+																					<div class="l hm">
+																						<span class="be b bf z dv">
+																							<div class="ab cm hn ho hp">
+																								<span class="be b bf z dv">
+																									<div class="ab ae">
+																										<span data-testid="storyPublishDate">Aug 17
+																										</span>
+																									</div>
+																								</span>
+																							</div>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																			<figure class="la lb lc ld le lf kx ky paragraph-image">
+																				<div role="button" tabindex="0" class="lg lh eb li bg lj">
+																					<div class="kx ky kz">
+																						<picture>
+																							<source srcSet="https://miro.medium.com/v2/resize:fit:640/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 640w, https://miro.medium.com/v2/resize:fit:720/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 720w, https://miro.medium.com/v2/resize:fit:750/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 750w, https://miro.medium.com/v2/resize:fit:786/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 786w, https://miro.medium.com/v2/resize:fit:828/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 828w, https://miro.medium.com/v2/resize:fit:1100/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 1100w, https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 1400w" sizes="(min-resolution: 4dppx) and (max-width: 700px) 50vw, (-webkit-min-device-pixel-ratio: 4) and (max-width: 700px) 50vw, (min-resolution: 3dppx) and (max-width: 700px) 67vw, (-webkit-min-device-pixel-ratio: 3) and (max-width: 700px) 65vw, (min-resolution: 2.5dppx) and (max-width: 700px) 80vw, (-webkit-min-device-pixel-ratio: 2.5) and (max-width: 700px) 80vw, (min-resolution: 2dppx) and (max-width: 700px) 100vw, (-webkit-min-device-pixel-ratio: 2) and (max-width: 700px) 100vw, 700px" type="image/webp"/>
+																							<source data-testid="og" srcSet="https://miro.medium.com/v2/resize:fit:640/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 640w, https://miro.medium.com/v2/resize:fit:720/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 720w, https://miro.medium.com/v2/resize:fit:750/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 750w, https://miro.medium.com/v2/resize:fit:786/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 786w, https://miro.medium.com/v2/resize:fit:828/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 828w, https://miro.medium.com/v2/resize:fit:1100/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 1100w, https://miro.medium.com/v2/resize:fit:1400/1*HCbzJ06rYcMKitLZcpYgxQ.jpeg 1400w" sizes="(min-resolution: 4dppx) and (max-width: 700px) 50vw, (-webkit-min-device-pixel-ratio: 4) and (max-width: 700px) 50vw, (min-resolution: 3dppx) and (max-width: 700px) 67vw, (-webkit-min-device-pixel-ratio: 3) and (max-width: 700px) 65vw, (min-resolution: 2.5dppx) and (max-width: 700px) 80vw, (-webkit-min-device-pixel-ratio: 2.5) and (max-width: 700px) 80vw, (min-resolution: 2dppx) and (max-width: 700px) 100vw, (-webkit-min-device-pixel-ratio: 2) and (max-width: 700px) 100vw, 700px"/>
+																							<img alt="" class="bg lk ll c" width="700" height="478" role="presentation"/>
+																						</picture>
+																					</div>
+																				</div>
+																			</figure>
+																			<blockquote class="lm ln lo">
+																				<p id="acf1" class="lp lq lr ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn fh bj">Data, Data, Data. I can’t build bricks without clay — Sherlock Holmes via Arthur Conan Doyle</p>
+																			</blockquote>
+																			<p id="5142" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">In today’s data-driven world, the ability to transform raw data into meaningful insights is a superpower. Welcome to the realm of data analysis, where the collection, transformation, and organization of data illuminate the path to informed decision-making.</p>
+																			<p id="b1fd" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Alright, fellow data explorers, let’s take a journey into the realm where data isn’t just numbers;
+																				it’s the clay we shape into insights. In this era of data-fueled adventures, we’re the modern-day detectives, using our analytical magnifying glass to unravel mysteries hidden within those datasets.
+																			</p>
+																			<h1 id="eead" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">A Data Analyst’s Canvas: Painting Insights with Data</h1>
+																			<p id="b1ba" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Imagine a canvas where every stroke represents a step in the data analysis process. At the heart of this canvas lies the data analyst, a maestro who orchestrates the symphony of data to create meaningful narratives.</p>
+																			<p id="047f" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 1:Ask and Define
+																				</strong>
+																			</p>
+																			<p id="5d2f" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">The journey begins with questions — the catalyst for data analysis. Identify the business challenge or objective, and let it guide your exploration.</p>
+																			<p id="3631" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 2:Prepare and Collect
+																				</strong>
+																			</p>
+																			<p id="3475" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Data is the foundation. Gather, store, and manage the information — the raw material for your analysis.</p>
+																			<p id="4134" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 3:Process and Clean
+																				</strong>
+																			</p>
+																			<p id="da42" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Like refining clay, cleaning and validating data ensures its integrity. Removing inconsistencies paves the way for accurate insights.</p>
+																			<p id="58e8" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 4:Analyze and Discover
+																				</strong>
+																			</p>
+																			<p id="428c" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">This is where the magic happens. Uncover patterns, trends, and relationships that lie within the data’s intricate weave.</p>
+																			<p id="32c3" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 5:Share and Communicate
+																				</strong>
+																			</p>
+																			<p id="0d68" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Your insights need an audience. Communicate findings through visuals, presentations, or reports that resonate with stakeholders.</p>
+																			<p id="bb15" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">
+																				<strong class="ls fp">Step 6:Act and Implement
+																				</strong>
+																			</p>
+																			<p id="71a8" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Insights without action are like a canvas without paint. Put your analysis to work, solving problems and driving strategic decisions.</p>
+																			<h1 id="9916" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">The Symphony of Data Ecosystem</h1>
+																			<p id="ea5e" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">And now, let’s talk about the symphony of data — an orchestra where hardware, software, and us humans play together to create harmony. It’s like a dance — the rhythm of data flowing through servers, the melody of algorithms, and the choreography of our analytical moves. The data ecosystem encompasses the hardware, software, and even people who interact with data. Picture it as an orchestra, each instrument playing a role in creating harmonious insights.</p>
+																			<h1 id="083f" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">The Palette of Analytical Skills</h1>
+																			<p id="4f07" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Great data analysis requires more than tools — it requires a palette of analytical skills.</p>
+																			<ul class="">
+																				<li id="2fee" class="lp lq fo ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn nu nv nw bj">Curiosity:The spark that ignites exploration.</li>
+																				<li id="8710" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Contextual Understanding:The ability to see the bigger picture.</li>
+																				<li id="8d2e" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Technical Mindset:Breaking complexities into logical steps.</li>
+																				<li id="8261" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Design:Structuring information for clarity.</li>
+																				<li id="6882" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Strategy:Managing people, processes, and tools for effective analysis.</li>
+																			</ul>
+																			<h1 id="8bfd" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">Analytical Thinking:Crafting Solutions Piece by Piece</h1>
+																			<p id="ccdf" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Much like an artist dissecting a masterpiece, analytical thinking deconstructs problems to reveal solutions.</p>
+																			<ul class="">
+																				<li id="e44a" class="lp lq fo ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn nu nv nw bj">Visualization:Transform data into visual narratives.</li>
+																				<li id="d8cf" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Strategic Thinking:Plan your analytical journey.</li>
+																				<li id="ceb2" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Problem Solving:Address the core challenge.</li>
+																				<li id="0ef3" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Correlation:Uncover connections (remember, correlation ≠ causation).</li>
+																				<li id="59fc" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Balancing Act:Navigate between the details and the big picture.</li>
+																			</ul>
+																			<h1 id="3f8e" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">Exploring the Data Life Cycle</h1>
+																			<p id="e476" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Data has a lifecycle, akin to a living organism evolving through stages.</p>
+																			<ol class="">
+																				<li id="32de" class="lp lq fo ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn oc nv nw bj">Planning:Determine data needs and management strategies.</li>
+																				<li id="e705" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn oc nv nw bj">Capture:Collect data from various sources.</li>
+																				<li id="0493" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn oc nv nw bj">Management:Care for data storage and maintenance.</li>
+																				<li id="0d5b" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn oc nv nw bj">Analysis:Extract insights and solutions.</li>
+																				<li id="a960" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn oc nv nw bj">Archiving:Store data for long-term reference.</li>
+																				<li id="20f0" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn oc nv nw bj">Destruction:Remove data no longer needed.</li>
+																			</ol>
+																			<figure class="oe of og oh oi lf kx ky paragraph-image">
+																				<div role="button" tabindex="0" class="lg lh eb li bg lj">
+																					<div class="kx ky od">
+																						<picture>
+																							<source srcSet="https://miro.medium.com/v2/resize:fit:640/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 640w, https://miro.medium.com/v2/resize:fit:720/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 720w, https://miro.medium.com/v2/resize:fit:750/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 750w, https://miro.medium.com/v2/resize:fit:786/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 786w, https://miro.medium.com/v2/resize:fit:828/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 828w, https://miro.medium.com/v2/resize:fit:1100/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 1100w, https://miro.medium.com/v2/resize:fit:1400/format:webp/1*K3JjkM8GMsJXKGAuK0Re3A.png 1400w" sizes="(min-resolution: 4dppx) and (max-width: 700px) 50vw, (-webkit-min-device-pixel-ratio: 4) and (max-width: 700px) 50vw, (min-resolution: 3dppx) and (max-width: 700px) 67vw, (-webkit-min-device-pixel-ratio: 3) and (max-width: 700px) 65vw, (min-resolution: 2.5dppx) and (max-width: 700px) 80vw, (-webkit-min-device-pixel-ratio: 2.5) and (max-width: 700px) 80vw, (min-resolution: 2dppx) and (max-width: 700px) 100vw, (-webkit-min-device-pixel-ratio: 2) and (max-width: 700px) 100vw, 700px" type="image/webp"/>
+																							<source data-testid="og" srcSet="https://miro.medium.com/v2/resize:fit:640/1*K3JjkM8GMsJXKGAuK0Re3A.png 640w, https://miro.medium.com/v2/resize:fit:720/1*K3JjkM8GMsJXKGAuK0Re3A.png 720w, https://miro.medium.com/v2/resize:fit:750/1*K3JjkM8GMsJXKGAuK0Re3A.png 750w, https://miro.medium.com/v2/resize:fit:786/1*K3JjkM8GMsJXKGAuK0Re3A.png 786w, https://miro.medium.com/v2/resize:fit:828/1*K3JjkM8GMsJXKGAuK0Re3A.png 828w, https://miro.medium.com/v2/resize:fit:1100/1*K3JjkM8GMsJXKGAuK0Re3A.png 1100w, https://miro.medium.com/v2/resize:fit:1400/1*K3JjkM8GMsJXKGAuK0Re3A.png 1400w" sizes="(min-resolution: 4dppx) and (max-width: 700px) 50vw, (-webkit-min-device-pixel-ratio: 4) and (max-width: 700px) 50vw, (min-resolution: 3dppx) and (max-width: 700px) 67vw, (-webkit-min-device-pixel-ratio: 3) and (max-width: 700px) 65vw, (min-resolution: 2.5dppx) and (max-width: 700px) 80vw, (-webkit-min-device-pixel-ratio: 2.5) and (max-width: 700px) 80vw, (min-resolution: 2dppx) and (max-width: 700px) 100vw, (-webkit-min-device-pixel-ratio: 2) and (max-width: 700px) 100vw, 700px"/>
+																							<img alt="" class="bg lk ll c" width="700" height="701" role="presentation"/>
+																						</picture>
+																					</div>
+																				</div>
+																				<figcaption class="oj ok ol kx ky om on be b bf z dv">Data Life Cycle</figcaption>
+																			</figure>
+																			<h1 id="2754" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">Visualizing Insights:The Magic of Data Visualization Tools</h1>
+																			<p id="b7f7" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Harnessing data visualization tools is like adding colors to a canvas. They’re like a box of paints that turn raw data into vibrant visual stories, making it easier for everyone to understand.</p>
+																			<ul class="">
+																				<li id="b9e3" class="lp lq fo ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn nu nv nw bj">Tableau:Craft interactive graphs and dashboards.</li>
+																				<li id="540b" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Looker:Connect data directly to visual tools.</li>
+																			</ul>
+																			<h1 id="b440" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">The Data Analyst:A Symphony of Roles</h1>
+																			<p id="e9a3" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">Among the many roles in the realm of analysis, the data analyst stands out:</p>
+																			<ul class="">
+																				<li id="a2d5" class="lp lq fo ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn nu nv nw bj">Business Analyst:Improves processes, products, or services.</li>
+																				<li id="2337" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Analytics Consultant:Designs systems and models.</li>
+																				<li id="9347" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Engineer:Integrates data from various sources.</li>
+																				<li id="09ae" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Scientist:Unearths trends through advanced analysis.</li>
+																				<li id="331b" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Data Specialist:Organizes and converts data.</li>
+																				<li id="4a5a" class="lp lq fo ls b lt nx lv lw lx ny lz ma mb nz md me mf oa mh mi mj ob ml mm mn nu nv nw bj">Operations Analyst:Assesses business operations.</li>
+																			</ul>
+																			<h1 id="69b0" class="mr ms fo be mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nn no bj">Embarking on Your Data Odyssey</h1>
+																			<p id="6b27" class="pw-post-body-paragraph lp lq fo ls b lt np lv lw lx nq lz ma mo nr md me mp ns mh mi mq nt ml mm mn fh bj">As you step into the world of data analysis, remember that each data point holds a story waiting to be told. With your analytical prowess, you’re the storyteller, revealing insights that guide decisions, shape strategies, and drive growth.</p>
+																			<p id="a7b0" class="pw-post-body-paragraph lp lq fo ls b lt lu lv lw lx ly lz ma mo mc md me mp mg mh mi mq mk ml mm mn fh bj">Unlock the hidden stories within data. Become the detective of insights, the artist of data, and the maestro of analysis. It’s time to observe the unobserved, discover the hidden gems within data, and become the maestros of our data symphony. Let’s turn data into art, insights into actions, and charts into tales that inspire the world of business.</p>
+																			<blockquote class="lm ln lo">
+																				<p id="e530" class="lp lq lr ls b lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn fh bj">The world is full of obvious things which nobody by any chance ever observes. — Sherlock Holmes via Arthur Conan Doyle</p>
+																			</blockquote>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

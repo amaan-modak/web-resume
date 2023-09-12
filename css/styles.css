@@ -585,40 +585,10 @@ ul.timeline .date {
     z-index: 3;
 }
 
-.blog-post-card {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    overflow: hidden; /* Ensures the card won't expand to fit content */
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-.card-content h2 {
-    font-size: 1.4rem;
-    margin: 10px 0;
-}
-
-.card-content p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-.card-content a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
+.col-md-6 img {
+    height: 450px; /* You can adjust the height as needed */
+    width: auto; /* Let the width adjust proportionally */
+  }
 
 #main {
     left: 0;
