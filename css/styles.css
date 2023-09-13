@@ -352,11 +352,15 @@ ul#navigation li .glyphicon {
 
 
 .biothumb{
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+    height: 100%;
     position: relative;
 }
 
 .biothumb .overlay{
     position: absolute;
+    flex-grow: 1; /* Expand to fill available space vertically */
     width: 100%;
     color:#fff;
     bottom: 0;
@@ -584,11 +588,6 @@ ul.timeline .date {
     left: -250px;
     z-index: 3;
 }
-
-.col-md-6 img {
-    height: 450px; /* You can adjust the height as needed */
-    width: auto; /* Let the width adjust proportionally */
-  }
 
 #main {
     left: 0;
